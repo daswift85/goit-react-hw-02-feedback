@@ -12,8 +12,8 @@ export const FeedbackOptions = ({options, onBtnClick}) => (
     );
 
     FeedbackOptions.propTypes = {
-        options: PropTypes.array.isRequired,
-        onBtnClick: PropTypes.func.isRequired,
+      options: PropTypes.arrayOf(PropTypes.string).isRequired,
+      onBtnClick: PropTypes.func.isRequired,
     };
 
 
